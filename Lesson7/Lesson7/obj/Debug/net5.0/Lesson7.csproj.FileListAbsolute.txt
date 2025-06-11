@@ -1,0 +1,15 @@
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson7\Lesson7\bin\Debug\net5.0\Lesson7.exe
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson7\Lesson7\bin\Debug\net5.0\Lesson7.deps.json
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson7\Lesson7\bin\Debug\net5.0\Lesson7.runtimeconfig.json
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson7\Lesson7\bin\Debug\net5.0\Lesson7.runtimeconfig.dev.json
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson7\Lesson7\bin\Debug\net5.0\Lesson7.dll
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson7\Lesson7\bin\Debug\net5.0\Lesson7.pdb
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson7\Lesson7\obj\Debug\net5.0\Lesson7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson7\Lesson7\obj\Debug\net5.0\Lesson7.AssemblyInfoInputs.cache
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson7\Lesson7\obj\Debug\net5.0\Lesson7.AssemblyInfo.cs
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson7\Lesson7\obj\Debug\net5.0\Lesson7.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson7\Lesson7\obj\Debug\net5.0\Lesson7.dll
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson7\Lesson7\obj\Debug\net5.0\refint\Lesson7.dll
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson7\Lesson7\obj\Debug\net5.0\Lesson7.pdb
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson7\Lesson7\obj\Debug\net5.0\Lesson7.genruntimeconfig.cache
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson7\Lesson7\obj\Debug\net5.0\ref\Lesson7.dll

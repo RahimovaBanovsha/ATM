@@ -1,0 +1,14 @@
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\DefaultImplementation\bin\Debug\net8.0\DefaultImplementation.exe
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\DefaultImplementation\bin\Debug\net8.0\DefaultImplementation.deps.json
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\DefaultImplementation\bin\Debug\net8.0\DefaultImplementation.runtimeconfig.json
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\DefaultImplementation\bin\Debug\net8.0\DefaultImplementation.dll
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\DefaultImplementation\bin\Debug\net8.0\DefaultImplementation.pdb
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\DefaultImplementation\obj\Debug\net8.0\DefaultImplementation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\DefaultImplementation\obj\Debug\net8.0\DefaultImplementation.AssemblyInfoInputs.cache
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\DefaultImplementation\obj\Debug\net8.0\DefaultImplementation.AssemblyInfo.cs
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\DefaultImplementation\obj\Debug\net8.0\DefaultImplementation.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\DefaultImplementation\obj\Debug\net8.0\DefaultImplementation.dll
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\DefaultImplementation\obj\Debug\net8.0\refint\DefaultImplementation.dll
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\DefaultImplementation\obj\Debug\net8.0\DefaultImplementation.pdb
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\DefaultImplementation\obj\Debug\net8.0\DefaultImplementation.genruntimeconfig.cache
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\DefaultImplementation\obj\Debug\net8.0\ref\DefaultImplementation.dll

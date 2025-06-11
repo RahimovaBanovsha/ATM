@@ -1,0 +1,14 @@
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\ImplicitExplicitInterface\bin\Debug\net8.0\ImplicitExplicitInterface.exe
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\ImplicitExplicitInterface\bin\Debug\net8.0\ImplicitExplicitInterface.deps.json
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\ImplicitExplicitInterface\bin\Debug\net8.0\ImplicitExplicitInterface.runtimeconfig.json
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\ImplicitExplicitInterface\bin\Debug\net8.0\ImplicitExplicitInterface.dll
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\ImplicitExplicitInterface\bin\Debug\net8.0\ImplicitExplicitInterface.pdb
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\ImplicitExplicitInterface\obj\Debug\net8.0\ImplicitExplicitInterface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\ImplicitExplicitInterface\obj\Debug\net8.0\ImplicitExplicitInterface.AssemblyInfoInputs.cache
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\ImplicitExplicitInterface\obj\Debug\net8.0\ImplicitExplicitInterface.AssemblyInfo.cs
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\ImplicitExplicitInterface\obj\Debug\net8.0\ImplicitExplicitInterface.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\ImplicitExplicitInterface\obj\Debug\net8.0\ImplicitExplicitInterface.dll
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\ImplicitExplicitInterface\obj\Debug\net8.0\refint\ImplicitExplicitInterface.dll
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\ImplicitExplicitInterface\obj\Debug\net8.0\ImplicitExplicitInterface.pdb
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\ImplicitExplicitInterface\obj\Debug\net8.0\ImplicitExplicitInterface.genruntimeconfig.cache
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\ImplicitExplicitInterface\obj\Debug\net8.0\ref\ImplicitExplicitInterface.dll

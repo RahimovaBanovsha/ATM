@@ -1,0 +1,4 @@
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\New_Less\New_Less\obj\Debug\net8.0\New_Less.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\New_Less\New_Less\obj\Debug\net8.0\New_Less.AssemblyInfoInputs.cache
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\New_Less\New_Less\obj\Debug\net8.0\New_Less.AssemblyInfo.cs
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\New_Less\New_Less\obj\Debug\net8.0\New_Less.csproj.CoreCompileInputs.cache

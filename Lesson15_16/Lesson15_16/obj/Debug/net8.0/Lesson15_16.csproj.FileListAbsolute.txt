@@ -1,0 +1,14 @@
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\Lesson15_16\obj\Debug\net8.0\Lesson15_16.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\Lesson15_16\obj\Debug\net8.0\Lesson15_16.AssemblyInfoInputs.cache
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\Lesson15_16\obj\Debug\net8.0\Lesson15_16.AssemblyInfo.cs
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\Lesson15_16\obj\Debug\net8.0\Lesson15_16.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\Lesson15_16\bin\Debug\net8.0\Lesson15_16.exe
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\Lesson15_16\bin\Debug\net8.0\Lesson15_16.deps.json
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\Lesson15_16\bin\Debug\net8.0\Lesson15_16.runtimeconfig.json
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\Lesson15_16\bin\Debug\net8.0\Lesson15_16.dll
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\Lesson15_16\bin\Debug\net8.0\Lesson15_16.pdb
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\Lesson15_16\obj\Debug\net8.0\Lesson15_16.dll
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\Lesson15_16\obj\Debug\net8.0\refint\Lesson15_16.dll
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\Lesson15_16\obj\Debug\net8.0\Lesson15_16.pdb
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\Lesson15_16\obj\Debug\net8.0\Lesson15_16.genruntimeconfig.cache
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\Lesson15_16\Lesson15_16\obj\Debug\net8.0\ref\Lesson15_16.dll
