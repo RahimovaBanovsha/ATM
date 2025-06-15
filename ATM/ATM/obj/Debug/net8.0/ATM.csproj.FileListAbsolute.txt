@@ -12,3 +12,4 @@ C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\ATM\ATM\obj\Debug\net8.0\refint\ATM
 C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\ATM\ATM\obj\Debug\net8.0\ATM.pdb
 C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\ATM\ATM\obj\Debug\net8.0\ATM.genruntimeconfig.cache
 C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\ATM\ATM\obj\Debug\net8.0\ref\ATM.dll
+C:\Users\ThinkPad\OneDrive\Desktop\ItStep\C#\ATM\ATM\obj\Debug\net8.0\ATM.sourcelink.json

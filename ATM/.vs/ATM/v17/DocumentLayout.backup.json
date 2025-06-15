@@ -5,30 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4F7C1E49-2BD1-4A0F-876D-FA91D2548104}|ATM\\ATM.csproj|c:\\users\\thinkpad\\onedrive\\desktop\\itstep\\c#\\atm\\atm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F7C1E49-2BD1-4A0F-876D-FA91D2548104}|ATM\\ATM.csproj|solutionrelative:atm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F7C1E49-2BD1-4A0F-876D-FA91D2548104}|ATM\\ATM.csproj|c:\\users\\thinkpad\\onedrive\\desktop\\itstep\\c#\\atm\\atm\\transferservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F7C1E49-2BD1-4A0F-876D-FA91D2548104}|ATM\\ATM.csproj|solutionrelative:atm\\transferservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F7C1E49-2BD1-4A0F-876D-FA91D2548104}|ATM\\ATM.csproj|c:\\users\\thinkpad\\onedrive\\desktop\\itstep\\c#\\atm\\atm\\customexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F7C1E49-2BD1-4A0F-876D-FA91D2548104}|ATM\\ATM.csproj|solutionrelative:atm\\customexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F7C1E49-2BD1-4A0F-876D-FA91D2548104}|ATM\\ATM.csproj|c:\\users\\thinkpad\\onedrive\\desktop\\itstep\\c#\\atm\\atm\\transferfeepolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F7C1E49-2BD1-4A0F-876D-FA91D2548104}|ATM\\ATM.csproj|solutionrelative:atm\\transferfeepolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F7C1E49-2BD1-4A0F-876D-FA91D2548104}|ATM\\ATM.csproj|c:\\users\\thinkpad\\onedrive\\desktop\\itstep\\c#\\atm\\atm\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F7C1E49-2BD1-4A0F-876D-FA91D2548104}|ATM\\ATM.csproj|solutionrelative:atm\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F7C1E49-2BD1-4A0F-876D-FA91D2548104}|ATM\\ATM.csproj|c:\\users\\thinkpad\\onedrive\\desktop\\itstep\\c#\\atm\\atm\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F7C1E49-2BD1-4A0F-876D-FA91D2548104}|ATM\\ATM.csproj|solutionrelative:atm\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F7C1E49-2BD1-4A0F-876D-FA91D2548104}|ATM\\ATM.csproj|c:\\users\\thinkpad\\onedrive\\desktop\\itstep\\c#\\atm\\atm\\bankcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F7C1E49-2BD1-4A0F-876D-FA91D2548104}|ATM\\ATM.csproj|solutionrelative:atm\\bankcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,95 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CustomException.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPad\\OneDrive\\Desktop\\ItStep\\C#\\ATM\\ATM\\CustomException.cs",
-              "RelativeDocumentMoniker": "ATM\\CustomException.cs",
-              "ToolTip": "C:\\Users\\ThinkPad\\OneDrive\\Desktop\\ItStep\\C#\\ATM\\ATM\\CustomException.cs",
-              "RelativeToolTip": "ATM\\CustomException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T11:34:22.852Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TransferService.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPad\\OneDrive\\Desktop\\ItStep\\C#\\ATM\\ATM\\TransferService.cs",
-              "RelativeDocumentMoniker": "ATM\\TransferService.cs",
-              "ToolTip": "C:\\Users\\ThinkPad\\OneDrive\\Desktop\\ItStep\\C#\\ATM\\ATM\\TransferService.cs",
-              "RelativeToolTip": "ATM\\TransferService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T11:21:18.084Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TransferFeePolicy.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPad\\OneDrive\\Desktop\\ItStep\\C#\\ATM\\ATM\\TransferFeePolicy.cs",
-              "RelativeDocumentMoniker": "ATM\\TransferFeePolicy.cs",
-              "ToolTip": "C:\\Users\\ThinkPad\\OneDrive\\Desktop\\ItStep\\C#\\ATM\\ATM\\TransferFeePolicy.cs",
-              "RelativeToolTip": "ATM\\TransferFeePolicy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T11:11:29.016Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Bank.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPad\\OneDrive\\Desktop\\ItStep\\C#\\ATM\\ATM\\Bank.cs",
-              "RelativeDocumentMoniker": "ATM\\Bank.cs",
-              "ToolTip": "C:\\Users\\ThinkPad\\OneDrive\\Desktop\\ItStep\\C#\\ATM\\ATM\\Bank.cs",
-              "RelativeToolTip": "ATM\\Bank.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T23:13:39.088Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPad\\OneDrive\\Desktop\\ItStep\\C#\\ATM\\ATM\\Client.cs",
-              "RelativeDocumentMoniker": "ATM\\Client.cs",
-              "ToolTip": "C:\\Users\\ThinkPad\\OneDrive\\Desktop\\ItStep\\C#\\ATM\\ATM\\Client.cs",
-              "RelativeToolTip": "ATM\\Client.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAuwBEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T23:10:57.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BankCard.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPad\\OneDrive\\Desktop\\ItStep\\C#\\ATM\\ATM\\BankCard.cs",
-              "RelativeDocumentMoniker": "ATM\\BankCard.cs",
-              "ToolTip": "C:\\Users\\ThinkPad\\OneDrive\\Desktop\\ItStep\\C#\\ATM\\ATM\\BankCard.cs",
-              "RelativeToolTip": "ATM\\BankCard.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAIA6wCoAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T23:05:51.409Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\OneDrive\\Desktop\\ItStep\\C#\\ATM\\ATM\\Program.cs",
               "RelativeDocumentMoniker": "ATM\\Program.cs",
-              "ToolTip": "C:\\Users\\ThinkPad\\OneDrive\\Desktop\\ItStep\\C#\\ATM\\ATM\\Program.cs*",
-              "RelativeToolTip": "ATM\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABYAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ThinkPad\\OneDrive\\Desktop\\ItStep\\C#\\ATM\\ATM\\Program.cs",
+              "RelativeToolTip": "ATM\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T23:01:32.382Z",
+              "WhenOpened": "2025-06-15T09:19:46.1Z",
               "EditorCaption": ""
             }
           ]

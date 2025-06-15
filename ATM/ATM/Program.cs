@@ -1,9 +1,10 @@
 ﻿using ATM;
 using System;
+using System.IO;
 using System.Linq;
+using System.Collections.Generic;
 
 Random rand = new Random();
-
 BankCard card1 = new BankCard("Kapital Bank", "Elvin Huseynov", GeneratePan(rand), "1000", GenerateCvc(rand), DateTime.Now.AddYears(2), rand.Next(100, 5000));
 BankCard card2 = new BankCard("PASHA Bank", "Narmin Aliyeva", GeneratePan(rand), GeneratePin(rand), GenerateCvc(rand), DateTime.Now.AddYears(4), rand.Next(100, 5000));
 BankCard card3 = new BankCard("ABB", "Tural Ahmadov", GeneratePan(rand), GeneratePin(rand), GenerateCvc(rand), DateTime.Now.AddDays(105), rand.Next(100, 5000));
@@ -16,116 +17,201 @@ Client client3 = new Client(Guid.NewGuid(), "Tural", "Ahmadov", 30, 1600, card3)
 Client client4 = new Client(Guid.NewGuid(), "Aynur", "Rustamova", 28, 1800, card4);
 Client client5 = new Client(Guid.NewGuid(), "Murad", "Zeynalov", 27, 1450, card5);
 
-Client[] clients = new Client[] { client1, client2, client3, client4, client5 };
+Client[] clients = new[] { client1, client2, client3, client4, client5 };
+List<(DateTime, string)> operationLogs = new List<(DateTime, string)>();
 
 Client foundClient = null;
+
 while (foundClient == null)
 {
     Console.Write("Enter your PIN: ");
     string enteredPin = Console.ReadLine();
-
     foundClient = clients.FirstOrDefault(c => c.BankAccount.PIN == enteredPin);
     if (foundClient == null)
-    {
-        Console.WriteLine("PIN not found. Try again.\n");
-    }
+        Console.WriteLine("No card found with this PIN. Try again.\n");
 }
-
-Console.Clear();
-Console.WriteLine($"Welcome, {foundClient.Name} {foundClient.Surname}!");
-
+// ATM Operations: 
 bool isRunning = true;
+
 while (isRunning)
 {
-    Console.WriteLine("\nSelect an option:");
-    Console.WriteLine("1. Check Balance");
-    Console.WriteLine("2. Withdraw Cash");
-    Console.WriteLine("3. Transfer to Another Card");
-    Console.WriteLine("0. Exit");
-    Console.Write("Choice: ");
+    string[] mainOptions = {
+        "Check Balance",
+        "Withdraw Cash",
+        "View Operation History",
+        "Transfer to Another Card",
+        "Exit"
+    };
 
-    string option = Console.ReadLine();
+    int selectedOption = ShowMenu(mainOptions);
 
-    switch (option)
+    switch (selectedOption)
     {
-        case "1":
-            Console.WriteLine($"Balance: {foundClient.BankAccount.Balance:C}");
+        case 0:
+            Console.WriteLine($"Your balance: {foundClient.BankAccount.Balance} AZN");
+            LogOperation("Checked balance.");
+            Console.ReadKey();
             break;
 
-        case "2":
-            Console.Write("Enter amount to withdraw: ");
-            if (decimal.TryParse(Console.ReadLine(), out decimal withdrawAmount))
+        case 1:
+            string[] cashOptions = {
+                "10 AZN", "20 AZN", "50 AZN", "100 AZN", "Other (Enter manually)"
+            };
+            int cashChoice = ShowMenu(cashOptions);
+            decimal withdrawAmount = cashChoice switch
             {
-                if (withdrawAmount > foundClient.BankAccount.Balance)
-                {
-                    Console.WriteLine("Insufficient balance.");
-                }
-                else
-                {
-                    foundClient.BankAccount.Balance -= withdrawAmount;
-                    Console.WriteLine($"Withdrawn: {withdrawAmount:C}. New Balance: {foundClient.BankAccount.Balance:C}");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Invalid amount.");
-            }
-            break;
+                0 => 10,
+                1 => 20,
+                2 => 50,
+                3 => 100,
+                4 => GetCustomAmount(),
+                _ => 0
+            };
 
-        case "3":
             try
             {
-                Console.Write("Enter receiver PIN: ");
-                string receiverPin = Console.ReadLine();
+                if (withdrawAmount > foundClient.BankAccount.Balance)
+                    throw new InsufficientBalanceException("Insufficient balance for withdrawal.");
 
-                Client receiverClient = clients.FirstOrDefault(c => c.BankAccount.PIN == receiverPin);
-                BankCard receiverCard = receiverClient?.BankAccount;
-
-                Console.Write("Enter amount to transfer: ");
-                decimal.TryParse(Console.ReadLine(), out decimal amount);
-
-                BankCard senderCard = foundClient.BankAccount;
-
-                TransferFeePolicy feePolicy = receiverCard.BankName == senderCard.BankName
-                    ? new SameBankFeePolicy()
-                    : (receiverCard.BankName.Contains("Foreign") ? new InternationalBankFeePolicy() : new LocalOtherBankFeePolicy());
-
-                decimal fee = TransferService.TransferWithFee(senderCard, receiverCard, amount, feePolicy);
-                Console.WriteLine($"Transfer successful! Fee charged: {fee:C}");
-            }
-            catch (InvalidTransferTargetException ex)
-            {
-                Console.WriteLine($"Transfer failed: {ex.Message}");
+                foundClient.BankAccount.Balance -= withdrawAmount;
+                Console.WriteLine($"Withdrawn: {withdrawAmount} AZN. New balance: {foundClient.BankAccount.Balance} AZN");
+                LogOperation($"Withdrew {withdrawAmount} AZN");
             }
             catch (InsufficientBalanceException ex)
             {
-                Console.WriteLine($"Transfer failed: {ex.Message}");
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            Console.ReadKey();
+            break;
+
+        case 2:
+            string[] historyOptions = { "Last 1 day", "Last 5 days", "Last 10 days" };
+            int historyChoice = ShowMenu(historyOptions);
+            int days = historyChoice switch
+            {
+                0 => 1,
+                1 => 5,
+                2 => 10,
+                _ => 0
+            };
+
+            var filteredLogs = operationLogs.Where(l => l.Item1 >= DateTime.Now.AddDays(-days)).ToList();
+            Console.WriteLine($"\nOperations in last {days} day(s):");
+            if (filteredLogs.Any())
+            {
+                foreach (var log in filteredLogs)
+                    Console.WriteLine($"[{log.Item1}] - {log.Item2}");
+            }
+            else
+            {
+                Console.WriteLine("No operations found for selected period.");
+            }
+            Console.ReadKey();
+            break;
+
+        case 3:
+            Console.Write("Enter receiver's PIN: ");
+            string receiverPin = Console.ReadLine();
+            Client receiverClient = clients.FirstOrDefault(c => c.BankAccount.PIN == receiverPin);
+
+            if (receiverClient == null)
+            {
+                Console.WriteLine("No card found with this PIN.");
+                Console.ReadKey();
+                break;
+            }
+
+            Console.Write("Enter transfer amount: ");
+            if (!decimal.TryParse(Console.ReadLine(), out decimal transferAmount) || transferAmount <= 0)
+            {
+                Console.WriteLine("Invalid amount.");
+                Console.ReadKey();
+                break;
+            }
+
+            try
+            {
+                TransferFeePolicy feePolicy = receiverClient.BankAccount.BankName == foundClient.BankAccount.BankName
+                    ? new SameBankFeePolicy()
+                    : (receiverClient.BankAccount.BankName.Contains("Foreign") ? new InternationalBankFeePolicy() : new LocalOtherBankFeePolicy());
+
+                decimal fee = TransferService.TransferWithFee(foundClient.BankAccount, receiverClient.BankAccount, transferAmount, feePolicy);
+                Console.WriteLine($"Transfer successful. Fee charged: {fee} AZN");
+                LogOperation($"Transferred {transferAmount} AZN to {receiverClient.GetFullName()} (Fee: {fee} AZN)");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Unexpected error: {ex.Message}");
+                Console.WriteLine($"Transfer failed: {ex.Message}");
             }
+            Console.ReadKey();
             break;
 
-        case "0":
-            Console.WriteLine("Exiting ATM... Goodbye!");
+        case 4:
+            SaveHistoryToFile();
+            Console.WriteLine("Thank you for using our ATM. Goodbye!");
             isRunning = false;
-            break;
-
-        default:
-            Console.WriteLine("Invalid option. Please try again.");
             break;
     }
 }
 
-static string GeneratePan(Random rand)
+// === Helper Methods ===
+decimal GetCustomAmount()
 {
-    string pan = "";
-    for (int i = 0; i < 16; i++)
-        pan += rand.Next(0, 10);
-    return pan;
+    Console.Write("Enter custom amount: ");
+    return decimal.TryParse(Console.ReadLine(), out decimal amount) ? amount : 0;
 }
 
-static string GeneratePin(Random rand) => rand.Next(1000, 10000).ToString();
+void LogOperation(string message)
+{
+    var entry = (DateTime.Now, message);
+    operationLogs.Add(entry);
+    File.AppendAllText("operation_history.txt", $"[{entry.Item1}] - {entry.Item2}\n");
+}
 
-static string GenerateCvc(Random rand) => rand.Next(100, 1000).ToString();
+void SaveHistoryToFile()
+{
+    File.WriteAllLines("operation_full_history.txt", operationLogs.Select(l => $"[{l.Item1}] - {l.Item2}"));
+}
+
+int ShowMenu(string[] options)
+{
+    int selected = 0;
+    ConsoleKeyInfo key;
+    Console.CursorVisible = false;
+
+    while (true)
+    {
+        Console.Clear();
+        Console.WriteLine($"{foundClient.Name} {foundClient.Surname}, welcome to ATM.\n");
+
+        for (int i = 0; i < options.Length; i++)
+        {
+            if (i == selected)
+            {
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine($"> {options[i]}");
+                Console.ResetColor();
+            }
+            else
+            {
+                Console.WriteLine($"  {options[i]}");
+            }
+        }
+
+        key = Console.ReadKey(true);
+        if (key.Key == ConsoleKey.UpArrow)
+            selected = (selected == 0) ? options.Length - 1 : selected - 1;
+        else if (key.Key == ConsoleKey.DownArrow)
+            selected = (selected == options.Length - 1) ? 0 : selected + 1;
+        else if (key.Key == ConsoleKey.Enter)
+            break;
+    }
+
+    Console.CursorVisible = true;
+    Console.Clear();
+    return selected;
+}
+
+string GeneratePan(Random rand) => string.Concat(Enumerable.Range(0, 16).Select(_ => rand.Next(10).ToString()));
+string GeneratePin(Random rand) => rand.Next(1000, 10000).ToString();
+string GenerateCvc(Random rand) => rand.Next(100, 1000).ToString();
